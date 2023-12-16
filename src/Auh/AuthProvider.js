@@ -9,12 +9,10 @@ export const AuthProvider = ({ children }) => {
   const isLoggedIn = useSelector((state) => state.isloggedIn.isLoggedIn);
 
   const login = () => {
-    // login logic
     dispatch(loggedIn(true))
   };
 
   const logout = () => {
-    // logout logic
     dispatch(loggedIn(false))
   };
 
