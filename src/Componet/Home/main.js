@@ -4,8 +4,6 @@ import AllUserImage from "./allUser";
 
 export default function Main() {
   const allImages = useSelector((state) => state.images.allImages);
-  console.log(allImages);
-
   const images = JSON.parse(localStorage.getItem("images")) || [];
   return (
     <>
