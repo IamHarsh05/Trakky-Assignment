@@ -27,7 +27,7 @@ Overview:
 ![2. Home Page](https://github.com/IamHarsh05/Trakky-Assignment/blob/main/public/Photo/Home_Page_1.png)
 
 ## All Users Images Page
-![All Users Images Page](https://github.com/IamHarsh05/Trakky-Assignment/blob/main/public/Photo/Home_Page_1.png)
+![All Users Images Page](https://github.com/IamHarsh05/Trakky-Assignment/blob/main/public/Photo/All_User_Page.png)
 
 ## Payment Page
 ![Payment Page](https://github.com/IamHarsh05/Trakky-Assignment/blob/main/public/Photo/Payment_Page.png)
