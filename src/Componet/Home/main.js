@@ -17,7 +17,7 @@ export default function Main() {
             {images.map((image, index) => (
               <div key={index} className="flex justify-center overflow-hidden">
                 <img
-                  className="h-80 max-w-full transition-all duration-300 rounded-lg cursor-pointer md:filter md:grayscale hover:grayscale-0"
+                  className="h-48 md:h-80 max-w-full transition-all duration-300 rounded-lg cursor-pointer md:filter md:grayscale hover:grayscale-0"
                   src={image}
                   alt={`pic ${index + 1}`}
                 />
