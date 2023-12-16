@@ -13,12 +13,12 @@ export default function AllUserImage() {
               className="flex justify-center rounded-lg overflow-hidden"
             >
               <img
-                className="blur h-80 max-w-full transition-all duration-300 cursor-pointer"
+                className="image blur h-80 max-w-full transition-all duration-300 cursor-pointer pointer-events-none"
                 src={image}
                 alt={`pic ${index + 1}`}
               />
             </div>
-            <div className="hidden flex flex-col absolute group-hover:block ">
+            <div className="hidden flex flex-col absolute inset-1/2 group-hover:block cursor-pointer">
               <button className=""><ShoppingBagIcon className="h-10 w-10"/> </button>
               <p>Buy Now</p>
             </div>
