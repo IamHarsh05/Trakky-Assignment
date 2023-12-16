@@ -41,7 +41,7 @@ const Upload = () => {
       <input type="file" id='image' className='hidden' accept="image/*" onChange={handleImageChange} />
       {isFormVisible && 
         <div className='absolute flex flex-col justify-center p-4 bg-slate-100'>
-            <img src={selectedImage} alt="Selected" />
+            <img src={selectedImage} className='h-80 max-w-full' alt="Selected" />
             <button onClick={handleSaveImage}>Save Image</button>
         </div>
       }
