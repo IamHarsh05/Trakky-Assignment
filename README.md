@@ -38,6 +38,5 @@ On the 'All User Images' page, an added layer of privacy ensures images remain b
 ## Payment Page
 ![Payment Page](https://github.com/IamHarsh05/Trakky-Assignment/blob/main/public/Photo/Payment_Page.png)
 
-It
 
 
