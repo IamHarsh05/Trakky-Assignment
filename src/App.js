@@ -31,8 +31,8 @@ function AppContent() {
                 <div className="w-screen z-50">
                   <TopMenu />
                 </div>
+                <Upload />
                 <div className="overflow-y-scroll">
-                  <Upload />
                   <Main className="z-30" />
                 </div>
               </div>
