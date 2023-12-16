@@ -1,5 +1,6 @@
 import { ShoppingBagIcon } from "@heroicons/react/20/solid";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function AllUserImage() {
   const images = JSON.parse(localStorage.getItem("images")) || [];
@@ -10,7 +11,7 @@ export default function AllUserImage() {
           <div className="group grid grid-cols-1 place-items-center relative" key={`pic ${index + 1}`}>
             <div className="hidden flex flex-col absolute place-items-center group-hover:block cursor-pointer z-40">
               <button className=""><ShoppingBagIcon className="h-10 w-10"/> </button>
-              <p>Buy Now</p>
+              <Link to={`https://rzp.io/l/IZZTr7J7xq`} target="_blank"><p>Buy Now</p></Link>
             </div>
             <div
               key={index}
