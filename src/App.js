@@ -27,7 +27,7 @@ function AppContent() {
           <Route
             path="/"
             element={
-              <div className="flex flex-col h-screen">
+              <div className="flex flex-col h-screen bg-slate-200">
                 <div className="w-screen z-50">
                   <TopMenu />
                 </div>
