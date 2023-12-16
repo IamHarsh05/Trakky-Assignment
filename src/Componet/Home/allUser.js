@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Main() {
+export default function AllUserImage() {
   const images = JSON.parse(localStorage.getItem("images")) || [];
   return (
     <div className="flex flex-row px-4 py-10 bg-slate-200">

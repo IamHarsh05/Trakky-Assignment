@@ -28,7 +28,7 @@ function AppContent() {
             path="/"
             element={
               <div className="flex flex-col h-screen">
-                <div className="w-screen">
+                <div className="w-screen z-50">
                   <TopMenu />
                 </div>
                 <div className="overflow-y-scroll">

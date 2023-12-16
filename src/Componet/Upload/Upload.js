@@ -30,7 +30,7 @@ const Upload = () => {
   };
 
   return (
-    <div className='relative p-4 bg-slate-200 z-50'>
+    <div className='relative p-4 bg-slate-200 z-40'>
         <label htmlFor='image'>Upload</label>
       <input type="file" id='image' className='hidden' accept="image/*" onChange={handleImageChange} />
       {isFormVisible && 

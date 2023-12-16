@@ -1,18 +1,21 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext } from "react";
+import { useDispatch, useSelector } from 'react-redux';
+import { loggedIn } from "../Componet/Login/loginSlice";
 
 const AuthContext = createContext();
 
-export const AuthProvider = ({ children }) => {
-  const [isLoggedIn, setLoggedIn] = useState(false);
+export const AuthProvider = ({ children }) => {  
+  const dispatch = useDispatch();
+  const isLoggedIn = useSelector((state) => state.isloggedIn.isLoggedIn);
 
   const login = () => {
     // login logic
-    setLoggedIn(true);
+    dispatch(loggedIn(true))
   };
 
   const logout = () => {
     // logout logic
-    setLoggedIn(false);
+    dispatch(loggedIn(false))
   };
 
   return (
