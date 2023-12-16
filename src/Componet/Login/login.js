@@ -1,17 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default function Login() {
+export default function LoginDashboard() {
   return (
     <div className='flex flex-col bg-stone-100 h-full sm:flex-col md:flex-row lg:flex-row md:h-screen overflow-y-auto'>
       <div className='flex w-full h-full bg-blue-700 relative md:w-6/12 overflow-hidden'>
         <div className="mt-12 mx-16 font-mono text-emerald-50 text-xl font-bold tracking-wide ">
           <p>LOGO</p>
         </div>
-        <div class="grid place-items-center h-full font-mono font-bold tracking-widest text-3xl text-emerald-50 py-36 md:py-0">
+        <div className="grid place-items-center h-full font-mono font-bold tracking-widest text-3xl text-emerald-50 py-36 md:py-0">
           <div>Board.</div>
         </div>
         <div className='absolute my-16 mx-24 bottom-0 w-4/12 md:mx-56 md:justify-center'>
-          <div class="grid grid-cols-4 gap-12 md:gap-4">
+          <div className="grid grid-cols-4 gap-12 md:gap-4">
             <div className='w-10 mx-2 md:mx-1'>
               <img
               className="h-10 md:w-auto md:h-10"
@@ -103,12 +104,14 @@ export default function Login() {
               </div>
 
               <div>
-                <button
-                  type="submit"
-                  className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Sign in
-                </button>
+                <Link to="/">
+                  <button
+                    type="submit"
+                    className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  >
+                    Sign in
+                  </button>
+                </Link>
               </div>
             </form>
 

@@ -32,10 +32,9 @@ export default function TopMenu() {
             Dashboard
           </h2>
         </div>
-        <div className="mt-5 flex items-center lg:ml-4 lg:mt-0">
+        <div className="my-5 md:mt-5 md:mb-0  flex items-center lg:ml-4 lg:mt-0">
           <span className="sm:ml-3 inline-flex items-baseline">
             <div className="mx-2 flex items-center rounded-full bg-zinc-50 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6">
-              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
               <label
                 htmlFor="name"
                 className="block mx-2 text-sm font-medium leading-6 text-gray-900"
@@ -49,7 +48,7 @@ export default function TopMenu() {
                 type="text"
                 name="name"
                 id="name"
-                value={`inputValue`}
+                defaultValue={`inputValue`}
                 // onChange={}
                 className="block w-full rounded-md border-0 py-1.5 px-2 bg-transparent text-gray-900 ring-transparent placeholder:text-gray-400 focus:border-none focus:ring-0 focus:ring-transparent focus:outline-0 sm:text-sm sm:leading-6"
                 placeholder="Search Here"
