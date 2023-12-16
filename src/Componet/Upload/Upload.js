@@ -29,7 +29,7 @@ const Upload = () => {
       const images = JSON.parse(localStorage.getItem('images')) || [];
       images.push(selectedImage);
       localStorage.setItem('images', JSON.stringify(images));
-      dispatch(setImages(true));
+      dispatch(setImages(false));
       // Reset selected image
       setSelectedImage(null);
     }
