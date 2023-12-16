@@ -6,12 +6,12 @@ export const AuthProvider = ({ children }) => {
   const [isLoggedIn, setLoggedIn] = useState(false);
 
   const login = () => {
-    // Implement your login logic here
+    // login logic
     setLoggedIn(true);
   };
 
   const logout = () => {
-    // Implement your logout logic here
+    // logout logic
     setLoggedIn(false);
   };
 
