@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
+import { setImages } from '../Home/imagesSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Upload = () => {
+
+  const dispatch = useDispatch();
+  const allImages = useSelector((state) => state.images.allImages);
+
   const [selectedImage, setSelectedImage] = useState(null);
   const [isFormVisible, setIsFormVisible] = useState(false);
 
@@ -39,6 +45,7 @@ const Upload = () => {
             <button onClick={handleSaveImage}>Save Image</button>
         </div>
       }
+      <button className='mx-4' onClick={() => dispatch(setImages(true))}>{allImages ? (`My Images`) : (`Show All`)}</button>
     </div>
   );
 };
